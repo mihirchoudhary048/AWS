@@ -41,43 +41,59 @@ Ideal for **DevOps, Cloud Engineers, and IT Admins** managing AWS environments.
 ```bash
 git clone https://github.com/mihirchoudhary048/AWS.git
 cd AWS
-2️⃣ Install Required Packages
-bash
-Copy
-Edit
+```
+
+### **2️⃣ Install Required Packages**
+```bash
 pip install boto3 pandas openpyxl
-3️⃣ Configure AWS Credentials (if not already configured)
-bash
-Copy
-Edit
+```
+
+### **3️⃣ Configure AWS Credentials (if not already configured)**
+```bash
 aws configure
-Ensure you have permissions to access EC2, S3, IAM, RDS, ELB, CloudWatch, and Cost Explorer.
+```
+Ensure you have permissions to access **EC2, S3, IAM, RDS, ELB, CloudWatch, and Cost Explorer**.
 
-📜 How to Run the Scripts
-Command	Description
-python aws_list_s3.py	📂 Fetch & List all S3 Buckets
-python aws_inventory_report.py	🖥️ Generate Basic AWS Inventory Report
-python aws_inventory_advance_report.py	🏢 Generate Full AWS Tenancy Report
-python aws_health_check.py	❤️‍🔥 Perform AWS Health Check (EC2, RDS, Lambda, S3, ELB, CloudWatch)
-python aws_security_group_auditor.py	🔥 Security Group & Firewall Rule Audit
-python aws_budget_alert.py	💰 AWS Cost Monitoring & Budget Alert
-🔥 Why Use This?
-✔ Save Time – No more manual AWS CLI commands!
-✔ Structured Reports – Well-formatted Excel reports
-✔ Security & Cost Insights – Identify AWS security gaps, cost breakdowns, and overprovisioned resources
-✔ Works on AWS CloudShell – No local setup required
+---
 
-🎯 Next Steps & Future Enhancements
+## 🐝 How to Run the Scripts
+
+| Command | Description |
+|---------|-------------|
+| `python aws_list_s3.py` | 📂 Fetch & List all **S3 Buckets** |
+| `python aws_inventory_report.py` | 🖥️ Generate **Basic AWS Inventory Report** |
+| `python aws_inventory_advance_report.py` | 🏢 Generate **Full AWS Tenancy Report** |
+| `python aws_health_check.py` | ❤️‍🔥 Perform **AWS Health Check** (EC2, RDS, Lambda, S3, ELB, CloudWatch) |
+| `python aws_security_group_auditor.py` | 🔥 **Security Group & Firewall Rule Audit** |
+| `python aws_budget_alert.py` | 💰 **AWS Cost Monitoring & Budget Alert** |
+
+---
+
+## 🔥 Why Use This?
+✔ **Save Time** – No more manual AWS CLI commands!  
+✔ **Structured Reports** – Well-formatted **Excel reports**  
+✔ **Security & Cost Insights** – Identify AWS **security gaps**, **cost breakdowns**, and **overprovisioned resources**  
+✔ **Works on AWS CloudShell** – No local setup required  
+
+---
+
+## 🎯 Next Steps & Future Enhancements
+
 💡 Want to take it further? Try:
+- **🔄 Automating this with AWS Lambda**
+- **⏳ Scheduling it using AWS EventBridge**
+- **📧 Emailing reports via SES**
+- **📄 Uploading reports to S3 for team access**
+- **⚡️ Integrating with AWS Security Hub for compliance monitoring**
 
-🔄 Automating this with AWS Lambda
-⏳ Scheduling it using AWS EventBridge
-📧 Emailing reports via SES
-📦 Uploading reports to S3 for team access
-⚡️ Integrating with AWS Security Hub for compliance monitoring
-⭐ Support & Contributions
-If you find this useful, please ⭐ star this repository and share your feedback in the Issues section!
+---
 
-📝 Feel free to fork and contribute to improve the scripts!
+## ⭐ Support & Contributions
+If you find this useful, **please ⭐ star this repository** and share your feedback in the Issues section!
 
-🚀 Happy Cloud Automation! 🌩️ 🔥
+📝 Feel free to **fork and contribute** to improve the scripts!
+
+---
+
+🚀 **Happy Cloud Automation!** ⛈️ 🔥
+
