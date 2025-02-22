@@ -1,71 +1,83 @@
-# 🚀 AWS Inventory Automation with Python 🖥️📊  
+# 🚀 AWS Inventory & Health Check Automation with Python 📊 ☁️
 
-📌 **Automate AWS Inventory Collection & Generate Detailed Excel Reports** using **Python & Boto3**  
+Automate **AWS Inventory Collection, Security Audits, and Health Checks** using Python & Boto3.
 
-🔹 **No more manual AWS CLI commands!** These scripts **fetch AWS resource details** and generate structured **Excel reports** in minutes.  
-🔹 **Ideal for DevOps, Cloud Engineers, and IT Admins** managing AWS environments.
+✅ **No more manual AWS CLI commands!**  
+✅ **Auto-generate structured Excel reports for deep insights**  
+✅ **Identify security gaps, misconfigurations, and cost insights in minutes**  
 
----
-
-## 📂 **Included Scripts & Features**
-| 🚀 Script Name | 🛠️ Description |
-|--------------|---------------------------|
-| `aws_list_s3.py` | Lists **all S3 Buckets** and exports them to Excel |
-| `aws_inventory_report.py` | **Basic AWS Inventory** (EC2, S3, IAM, RDS) to Excel |
-| `aws_inventory_advance_report.py` | **Full AWS Tenancy Report** (EC2, VPCs, Security Groups, S3, IAM, RDS, Route 53, CloudFront, Cost Report) |
-
-📌 **Generated Reports (Excel)**  
-✔️ `aws_inventory_report.xlsx` → **Basic AWS Inventory**  
-✔️ `aws_inventory_advance_report.xlsx` → **Advanced AWS Inventory**  
-✔️ `s3_buckets_list.xlsx` → **S3 Bucket List Report**  
+Ideal for **DevOps, Cloud Engineers, and IT Admins** managing AWS environments.
 
 ---
 
-## 🔧 **Installation & Setup**
-🚀 **1️⃣ Clone the Repository**
-git clone https://github.com/mihirchoudhary048/OCI-Cloud.git
-cd OCI-Cloud/AWS scripts
-🚀 2️⃣ Install Required Packages
+## 📌 Included Scripts & Features
 
+| Script Name                     | Description |
+|----------------------------------|-------------|
+| `aws_list_s3.py`                | Lists all **S3 Buckets** and exports details to Excel |
+| `aws_inventory_report.py`        | **Basic AWS Inventory** (EC2, S3, IAM, RDS) to Excel |
+| `aws_inventory_advance_report.py` | **Full AWS Tenancy Report** (EC2, VPCs, Security Groups, S3, IAM, RDS, Route 53, CloudFront, Cost Insights) |
+| `aws_health_check.py`           | **AWS Health Check** (EC2, RDS, Lambda, ELB, S3, CloudWatch alarms) |
+| `aws_security_group_auditor.py` | **Security Group Auditor** - Detects open ports and insecure rules |
+| `aws_budget_alert.py`           | **AWS Cost & Budget Alerts** - Monitors cloud spending |
+  
+---
 
+## 📊 Generated Reports (Excel)
+| Report Name                      | Description |
+|-----------------------------------|-------------|
+| `aws_inventory_report.xlsx`       | **Basic AWS Inventory Report** |
+| `aws_inventory_advance_report.xlsx` | **Advanced AWS Inventory Report (Multi-Service)** |
+| `s3_buckets_list.xlsx`            | **S3 Bucket List Report** |
+| `aws_health_report.xlsx`          | **AWS Health & Performance Report** |
+| `aws_security_group_findings.xlsx` | **Security Group & Firewall Audit Report** |
+| `aws_cost_report.xlsx`            | **AWS Cost Optimization & Budget Report** |
+
+---
+
+## 🚀 Installation & Setup
+
+### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/mihirchoudhary048/AWS.git
+cd AWS
+2️⃣ Install Required Packages
+bash
+Copy
+Edit
 pip install boto3 pandas openpyxl
-🚀 3️⃣ Run the Scripts
+3️⃣ Configure AWS Credentials (if not already configured)
+bash
+Copy
+Edit
+aws configure
+Ensure you have permissions to access EC2, S3, IAM, RDS, ELB, CloudWatch, and Cost Explorer.
 
+📜 How to Run the Scripts
 Command	Description
 python aws_list_s3.py	📂 Fetch & List all S3 Buckets
-python aws_inventory_report.py	🖥️ Generate Basic AWS Inventory Report (EC2, S3, IAM, RDS)
-python aws_inventory_advance_report.py	🌍 Full AWS Tenancy Report with Security Groups, VPCs, CloudFront
-🚀 4️⃣ Download Reports from AWS CloudShell
-📌 If using AWS CloudShell, download the Excel reports:
-
-Click → Actions → Download File
-Enter filename → aws_inventory_report.xlsx
-Save it locally 📂
-📊 Sample Excel Report Preview
-Instance ID	Type	State	Public IP	Private IP	Launch Time
-i-12345678	t2.micro	running	52.1.1.1	192.168.1.1	2024-02-15
-📌 Generated Excel reports contain separate sheets for:
-✔️ EC2 Instances
-✔️ VPCs & Security Groups
-✔️ S3 Buckets & IAM Users
-✔️ Route 53, CloudFront, and AWS Cost Report
-
+python aws_inventory_report.py	🖥️ Generate Basic AWS Inventory Report
+python aws_inventory_advance_report.py	🏢 Generate Full AWS Tenancy Report
+python aws_health_check.py	❤️‍🔥 Perform AWS Health Check (EC2, RDS, Lambda, S3, ELB, CloudWatch)
+python aws_security_group_auditor.py	🔥 Security Group & Firewall Rule Audit
+python aws_budget_alert.py	💰 AWS Cost Monitoring & Budget Alert
 🔥 Why Use This?
-✅ Save Time – No more manual AWS CLI commands
-✅ Structured Reports – Well-formatted Excel reports
-✅ Security & Cost Insights – Identify AWS resources, security gaps, & cost breakdown
-✅ Works on AWS CloudShell – No local setup required
+✔ Save Time – No more manual AWS CLI commands!
+✔ Structured Reports – Well-formatted Excel reports
+✔ Security & Cost Insights – Identify AWS security gaps, cost breakdowns, and overprovisioned resources
+✔ Works on AWS CloudShell – No local setup required
 
-🚀 Next Steps
-📌 Want to take it further? Try:
-✅ Automating this with AWS Lambda
-✅ Scheduling it using AWS EventBridge
-✅ Emailing reports via AWS SES
+🎯 Next Steps & Future Enhancements
+💡 Want to take it further? Try:
 
-📌 💙 Like & ⭐ Star this repository if you find it useful!
-📌 📢 Share your feedback or improvements in the Issues section!
+🔄 Automating this with AWS Lambda
+⏳ Scheduling it using AWS EventBridge
+📧 Emailing reports via SES
+📦 Uploading reports to S3 for team access
+⚡️ Integrating with AWS Security Hub for compliance monitoring
+⭐ Support & Contributions
+If you find this useful, please ⭐ star this repository and share your feedback in the Issues section!
 
-🚀 Happy Cloud Automation! ☁️✨
+📝 Feel free to fork and contribute to improve the scripts!
 
---
-
+🚀 Happy Cloud Automation! 🌩️ 🔥
