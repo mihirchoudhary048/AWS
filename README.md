@@ -20,6 +20,7 @@ Ideal for **DevOps, Cloud Engineers, and IT Admins** managing AWS environments.
 | `aws_health_check.py`           | **AWS Health Check** (EC2, RDS, Lambda, ELB, S3, CloudWatch alarms) |
 | `aws_security_group_auditor.py` | **Security Group Auditor** - Detects open ports and insecure rules |
 | `aws_budget_alert.py`           | **AWS Cost & Budget Alerts** - Monitors cloud spending |
+| `aws_find_orphan_resources.py`  | **aws_find_orphan_resources.py** - Quickly identifies orphaned or unused AWS resources across your entire AWS account, |
   
 ---
 
@@ -32,6 +33,7 @@ Ideal for **DevOps, Cloud Engineers, and IT Admins** managing AWS environments.
 | `aws_health_report.xlsx`          | **AWS Health & Performance Report** |
 | `aws_security_group_findings.xlsx` | **Security Group & Firewall Audit Report** |
 | `aws_cost_report.xlsx`            | **AWS Cost Optimization & Budget Report** |
+| `aws_find_orphan_resources.xlsx`  | **orphaned_resources_report** |
 
 ---
 
